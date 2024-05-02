@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body {
+    font-family: "Cabin", sans-serif;
+    background-color: mintcream;
+    }
+
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    .Container {
+        font-family: inherit;
+        margin: 0 auto;
+        width: 100%;
+    }
+    /*Navigation*/
+    nav{
+        padding: 1em ;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .fa-circle-info {
+        color: #ff6900;
+    }
+    .fa-house {
+        color: green;
+    }
+ul {
+    list-style: none;
+    margin-left: auto;
+    gap: 20px;
+    display: flex;
+}
+    /*text*/
+
+    .Head-page-Title,
+    .intro-article,
+    .date {
+        padding-bottom: 0.2em;
+        text-align: left;
+    }
+    .Head-page-Title {
+        color: whitesmoke;
+        font-size: 1.5rem;
+    }
+
+    .intro-article {
+        line-height: 1.8em;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 500px;
+        color: whitesmoke;
+        text-align: left;
+    }
+
+    .date {
+        text-align: left;
+        font-size: 0.7rem;
+        font-family: inherit;
+    }
+
+    /*Links*/
+a {
+    color: white;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.Music-Link {
+    color: deepskyblue;
+}
+.Music-Link:hover {
+    color: #ffa500;
+}
+
+
+/*content and layout */
+.head-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1em 1em;
+    color: whitesmoke;
+    min-height: 350px;
+    background-image: url("images/Programmer-Official.png");
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit,1fr);
+}
+.OtherPost {
+    text-align: center;
+    font-weight: bold;
+}
+.ContentSection {
+    padding: 1em;
+}
+
+
+/*Media-Query's*/
+@media (min-width: 760px) {
+    nav h2 {
+        font-size: 1.5rem;
+    }
+    i {
+        font-size: 1.5rem;
+    }
+      .Main-contentImg {
+         padding: 2em;
+      }
+
+     .Blog-Picture {
+         max-width: 20%;
+         margin-left: 3.125em;
+     }
+
+     .Article-Title{
+         padding-left: 1.8em;
+     }
+     .Intro-Title {
+         padding-left: 2.5em;
+     }
+    .About-learning,
+    .Main-Date {
+        padding: 0 4em 0 ;
+    }
+        .head-page {
+            min-height: 500px;
+        }
+        .Head-page-Title {
+            font-size: 3rem;
+        }
+        .date,
+        .intro-article{
+            font-size: 1rem;
+        }
+
+
+}
+
+@media (min-width: 870px) {
+    main  {
+        grid-template-columns: repeat(12,1fr);
+        gap: 1em;
+    }
+.Blog-Picture {
+    max-width: 10%;
+}
+    .head-page {
+        justify-content: center;
+        min-height: 700px;
+    }
+    .OtherPost {
+        text-align: center;
+        font-weight: bold;
+        grid-column: 1/-1;
+    }
+    .Frontend-grid {
+        grid-column: 1/5;
+    }
+    .AI-grid {
+        grid-column: 5/9;
+    }
+    .AI-grid-2 {
+        grid-column: 5/9;
+    }
+    .Gaming-Grid {
+        grid-column: 9/13;
+    }
+    .Gaming-Grid-2 {
+        grid-column: 9/13;
+    }
+    .Creativity-Grid {
+        grid-column: 1/5;
+    }
+    .Creativity-Grid-2 {
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+    .Future-Grid {
+        grid-column: 5/9;
+    }
+    .NextStep {
+       grid-column: 9/13;
+    }
+
+}
+/*Images*/
+
+.ContentImg {
+    width: 100%;
+    object-fit: cover;
+}
+.BoxShadow {
+    box-shadow: 4px 2px 10px #2b2828;
+}
+
+.Blog-Picture {
+    border: 0.3em solid white;
+    border-radius: 10%;
+    width: 20%;
+}
+
+/*Content text*/
+strong {
+    color: red;
+}
+.contentDate,
+ footer,
+ h2 {
+    font-size: 1rem;
+}
+.contentDate {
+    padding: 0.5em 0 0.5em;
+}
+
+.Title-blog{
+    font-size: 1.5rem;
+}
+.Article-Title,
+.Intro-Title {
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+.Article-Title {
+    width: 80%;
+    max-width: 900px;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.Intro-Title {
+    font-size: 1.5rem;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-weight: bold;
+}
+
+.BlogText {
+    padding-top: 0.7em;
+    line-height: 1.8em;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+
+
+.About-learning {
+    padding-bottom: 1em;
+}
+.BlogStory {
+    padding-top: 0.6em;
+}
+
+.BlogText-End {
+    padding-bottom: 2em;
+}
+
+/*footer*/
+footer {
+    padding: 1.5em;
+    text-align: center;
+    font-family: inherit;
+    color: whitesmoke;
+    background-color: rgba(32, 32, 32, 1);
+}
+
+footer  p {
+    font-size: 0.8rem;
+}
